@@ -16,6 +16,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # synced in directories
   config.vm.synced_folder '../cookbooks', '/cookbooks', nfs: true
+  #uncomment this line if you want to use an organization specific repo from within the VM
+  config.vm.synced_folder '../chef-repo-spinen', '/chef-repo-spinen', nfs: true
+
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   config.vm.network 'private_network', ip: '172.28.100.19'
