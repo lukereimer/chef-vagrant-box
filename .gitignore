@@ -1,0 +1,6 @@
+# for the chef servers SPINEN company
+client.rb
+chef.spinen.net.ca-bundle
+
+# vagrant machines
+.vagrant
